@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input,Button,Select</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="form">
+                <p>
+                    <strong>Пожалуйста, укажите Ваше имя и фамилию.</strong></p>
+                <p>Чтобы облегчить общение и поиск друзей, у нас приняты настоящие имена и фамилии</p>
+            </div>
+            <div class="form-container">
+                <div class="first-name">
+                    <input type="Search" placeholder="Ваше имя">
+                </div>
+
+                <div class="second-name">
+                    <input type="Search" placeholder="Ваша фамилия">
+                </div>
+                <div class="date-of-birth">
+                    <label>Дата рождения</label>
+                    <div class="date">
+                        <select name="day">
+                            <option value="День"hidden>День</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+
+                        <select name="month">
+                            <option value="Месяц" hidden>Месяц</option>
+                            <option value="Январь" >Январь</option>
+                            <option value="Февраль">Февраль</option>
+                        </select>
+
+                        <select name="year" hidden>
+                            <option value="Год" hidden>Год</option><option value="2015" >2015</option>
+                            <option value="2016">2016</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="registration">
+                    <button>Зарегистрироваться</button>
+                    <p>или</p>
+                </div>
+
+                <div class="facebook-link">
+                    <button>  <a href="#">Продолжить с Facebook</a></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

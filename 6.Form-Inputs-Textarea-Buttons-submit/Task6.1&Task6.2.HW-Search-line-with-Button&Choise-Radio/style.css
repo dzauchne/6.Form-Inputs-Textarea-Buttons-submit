@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(144, 213, 223);
+    padding: 30px;
+    font-size: large;
+    display: inline-block;
+}
+
+.search {
+    border: 2px rgb(63, 98, 104) solid;
+    border-radius: 3px;
+    display: block;
+    background-color: white;
+}
+
+input {
+    padding: 18px;
+    padding-left: 30px;
+    vertical-align: top;
+    /*Vertical-align задаём детям , а не родителям*/
+    border: none;
+}
+
+input:focus {
+    border: none;
+    /*отменим border, заданный Браузером*/
+    outline: none;
+    /*отменяем свечение*/
+}
+
+input::placeholder {
+    color: grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    opacity: 1;
+}
+
+button {
+    width: 55px;
+    height: 52px;
+    background: url(./images/loupe.PNG) no-repeat center / 25px rgb(94, 147, 155);
+    border: none;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+
+/*ИТОГО: между кнопкой и поисковой строкой не удалась граница*/
+
+.text-on-the-radio {
+    text-align: center;
+    padding: 15px;
+    display: inline-block;
+    max-width: 500px;
+}
+
+label {
+    display: inline-block;
+    padding: 7px 0px;
+    vertical-align: middle;
+}
+
+span {
+    display: inline-block;
+    width: 70px;
+}
+
+.text-on-the-radio div input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    vertical-align: middle;
+}
+
+.radio {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px grey solid;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+input:checked+span.radio {
+    background-color: rgb(3, 49, 51);
+    box-shadow: inset
+    /*внутренняя тень*/
+    0 0 2px 2px black;
+}
+
+
+/*ИТОГО: Кнопки переключения не работают*/

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    height: 700px;
+    margin: auto;
+    background-color: rgb(214, 212, 212);
+    font-size: large;
+    padding: 50px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.form {
+    max-width: 600px;
+    height: 100px;
+    margin: auto;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.first-name,
+.second-name,
+.registration,
+.facebook-link {
+    padding: 20px 20px 10px 20px;
+    display: block;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 18px 0 18px 15px;
+    vertical-align: middle;
+    /*Vertical-align задаём детям , а не родителям*/
+    border: solid 1px rgb(156, 155, 155);
+    border-radius: 5px;
+    cursor: auto;
+}
+
+input:focus {
+    outline: none;
+    /*отменяем свечение, заданное Браузером*/
+}
+
+input::placeholder {
+    color: grey;
+    font-family: Roboto;
+    font-size: large;
+    opacity: 1;
+}
+
+.date-of-birth {
+    width: 100%;
+    padding: 20px 20px 10px 21px;
+    display: inline-block;
+    margin: auto;
+}
+
+.date-of-birth p {
+    text-align: left;
+    color: grey;
+    padding: 10px;
+    font-family: Roboto;
+}
+
+.date select {
+    width: 32%;
+    display: inline;
+    padding: 18px 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(./images/arrow-down-sign-to-navigate.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 90%;
+    border: solid 1px rgb(156, 155, 155);
+    border-radius: 5px;
+    color: grey;
+    font-family: Roboto;
+    font-size: large;
+    text-align: left;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin: 0;
+    text-align: left;
+    color: grey;
+    padding: 13px 0;
+}
+
+.registration button {
+    width: 100%;
+    color: white;
+    font-family: Roboto;
+    font-size: large;
+    opacity: 1;
+    text-align: middle;
+    background-color: green;
+    padding: 18px 47px 18px 47px;
+    border: solid 1px rgb(156, 155, 155);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration p {
+    color: grey;
+    padding-top: 20px;
+}
+
+.registration p:after {
+    content: '------';
+    display: inline-block;
+    width: 40px;
+    color: grey;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.form-container p::before {
+    content: '------';
+    display: inline-block;
+    width: 40px;
+    color: grey;
+    text-align: middle;
+    margin-right: 10px;
+}
+
+.facebook-link button {
+    width: 100%;
+    font-family: Roboto;
+    font-size: large;
+    opacity: 1;
+    text-align: middle;
+    background-color: rgb(21, 87, 148);
+    padding: 18px 47px 18px 47px;
+    border: solid 1px rgb(156, 155, 155);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
